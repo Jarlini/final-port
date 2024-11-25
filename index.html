@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Jalini Sebanathan</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212; /* Deep dark background */
+      color: #e0e0e0; /* Soft white for text */
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .neon-title {
+      background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+
+    .neon-btn {
+      background: linear-gradient(90deg, #ff8c00, #ff0080);
+      color: white;
+      border-radius: 50px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .neon-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255, 128, 128, 0.8), 0 0 25px rgba(255, 128, 128, 0.8);
+    }
+
+    .neon-card {
+      background-color: #1e1e1e;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .neon-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 15px rgba(64, 224, 208, 0.8), 0 0 30px rgba(255, 140, 0, 0.8);
+    }
+
+    footer {
+      background-color: #181818;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- Header -->
+  <header class="py-8 text-center">
+    <h1 class="text-5xl neon-title">Jalini Sebanathan</h1>
+    <p class="text-xl mt-2">Web Developer | Designer | Problem Solver</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="py-4 bg-black sticky top-0 z-50">
+    <div class="container mx-auto flex justify-center space-x-6">
+      <a href="#about" class="text-gray-300 hover:text-pink-400">About</a>
+      <a href="#skills" class="text-gray-300 hover:text-blue-400">Skills</a>
+      <a href="#projects" class="text-gray-300 hover:text-yellow-400">Projects</a>
+      <a href="#contact" class="text-gray-300 hover:text-green-400">Contact</a>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 text-center">
+    <h2 class="text-4xl font-bold neon-title mb-6">About Me</h2>
+    <p class="text-lg mx-auto max-w-4xl">
+      Hi! I'm Jalini, a passionate web developer dedicated to creating stunning and user-friendly websites. I love solving complex problems with creative solutions and building impactful digital experiences.
+    </p>
+    <div class="mt-10">
+      <img
+        src="https://via.placeholder.com/200"
+        alt="Jalini Sebanathan"
+        class="rounded-full w-40 h-40 mx-auto shadow-lg border-4 border-pink-400"
+      />
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 text-center text-white">
+    <h2 class="text-4xl font-bold mb-6 neon-title">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+      <div class="neon-card p-6 rounded-lg">
+        <h3 class="text-lg font-bold">HTML & CSS</h3>
+      </div>
+      <div class="neon-card p-6 rounded-lg">
+        <h3 class="text-lg font-bold">JavaScript</h3>
+      </div>
+      <div class="neon-card p-6 rounded-lg">
+        <h3 class="text-lg font-bold">React.js</h3>
+      </div>
+      <div class="neon-card p-6 rounded-lg">
+        <h3 class="text-lg font-bold">Node.js</h3>
+      </div>
+      <div class="neon-card p-6 rounded-lg">
+        <h3 class="text-lg font-bold">Bootstrap</h3>
+      </div>
+      <div class="neon-card p-6 rounded-lg">
+        <h3 class="text-lg font-bold">Tailwind</h3>
+      </div>
+      <div class="neon-card p-6 rounded-lg">
+        <h3 class="text-lg font-bold">Git & GitHub</h3>
+      </div>
+      <div class="neon-card p-6 rounded-lg">
+        <h3 class="text-lg font-bold">MongoDB</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 text-center">
+    <h2 class="text-4xl font-bold neon-title mb-6">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      <div class="neon-card p-6 rounded-lg">
+        <h3 class="text-lg font-bold text-pink-400">Personal Portfolio</h3>
+        <p>Showcase of my skills and projects in a vibrant design.</p>
+      </div>
+      <div class="neon-card p-6 rounded-lg">
+        <h3 class="text-lg font-bold text-blue-400">Voyago</h3>
+        <p>Built a modern, scalable service platform with React and Node.js.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-black text-center text-white">
+    <h2 class="text-4xl font-bold neon-title mb-6">Get In Touch</h2>
+    <p class="text-lg">I'm open to collaborations and freelance opportunities! I have leadership and good communication skills.</p>
+    <button class="neon-btn px-8 py-3 mt-6">
+      <i class="lucide lucide-mail mr-2"></i> Contact Me
+    </button>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="py-20 bg-gray-800 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Get in Touch</h2>
+        <p class="text-center text-gray-600 mb-8">Feel free to reach out to me for inquiries, collaboration opportunities, or just to say hello!</p>
+        
+        <form action="#" method="POST">
+          <div class="mb-4">
+            <label for="name" class="block text-lg text-gray-800">Your Name</label>
+            <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded" required>
+          </div>
+          
+          <div class="mb-4">
+            <label for="email" class="block text-lg text-gray-800">Your Email</label>
+            <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded" required>
+          </div>
+          
+          <div class="mb-4">
+            <label for="message" class="block text-lg text-gray-800">Your Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded" required></textarea>
+          </div>
+          
+          <button type="submit" class="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-black text-white">
+    <p>&copy; 2024 Jalini Sebanathan | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
